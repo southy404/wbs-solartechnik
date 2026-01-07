@@ -1,0 +1,101 @@
+      <!-- NAVIGATION -->
+      <nav class="fixed top-6 left-0 w-full z-50">
+         <div
+            class="max-w-[1600px] mx-auto px-12 flex items-center justify-between"
+            >
+            <div class="flex items-center gap-3">
+               <img
+                  src="src/img/logo.png"
+                  alt="WBS Solartechnik Logo"
+                  class="h-7 sm:h-8 lg:h-12 w-auto object-contain"
+                  />
+            </div>
+            <!-- DESKTOP MENU -->
+            <div
+               class="hidden xl:flex items-center gap-8 bg-white/95 backdrop-blur px-8 py-3 rounded-full shadow-lg"
+               >
+               <a
+                  href="#"
+                  class="font-medium text-[#142850] px-4 py-2 rounded-full border border-[#142850] bg-transparent"
+                  >
+               Startseite
+               </a>
+               <a href="#" class="font-medium text-gray-900">Anlagen</a>
+               <a href="#" class="font-medium text-gray-900 flex items-center gap-1">
+               Installateure
+               <span class="text-xs">▾</span>
+               </a>
+               <a href="#" class="font-medium text-gray-900">Partner</a>
+               <a href="#" class="font-medium text-gray-900 flex items-center gap-1">
+               Beratung
+               <span class="text-xs">▾</span>
+               </a>
+            </div>
+            <div
+               class="hidden xl:flex items-center gap-3 bg-white/95 backdrop-blur px-3 py-2 rounded-full shadow-lg"
+               >
+               <a href="#" class="font-medium text-gray-900 px-4 py-2"> Anmelden </a>
+               <a
+                  href="#"
+                  class="bg-[#142850] text-white px-5 py-2 rounded-full font-semibold"
+                  >
+               Jetzt starten
+               </a>
+            </div>
+            <!-- MOBILE MENU -->
+            <button
+               id="menuButton"
+               class="relative flex xl:hidden bg-white/95 backdrop-blur w-12 h-12 rounded-full items-center justify-center shadow-lg"
+               aria-label="Menü öffnen"
+               >
+               <span
+                  class="menu-line absolute w-5 h-[2px] bg-[#142850] transition-all duration-300"
+                  style="transform: translateY(-6px)"
+                  ></span>
+               <span
+                  class="menu-line absolute w-5 h-[2px] bg-[#142850] transition-all duration-300"
+                  ></span>
+               <span
+                  class="menu-line absolute w-5 h-[2px] bg-[#142850] transition-all duration-300"
+                  style="transform: translateY(6px)"
+                  ></span>
+            </button>
+         </div>
+         </div>
+      </nav>
+      <div
+         id="mobileMenu"
+         class="fixed inset-0 z-40 hidden xl:hidden"
+         >
+         <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+         <div
+            class="absolute top-24 left-1/2 -translate-x-1/2 w-[90%] max-w-sm bg-white rounded-3xl shadow-2xl p-6 space-y-4"
+            >
+            <a href="#" class="block px-4 py-3 rounded-full font-medium text-[#142850] border border-[#142850]">
+            Startseite
+            </a>
+            <a href="#" class="block px-4 py-3 rounded-full font-medium text-gray-900">
+            Anlagen
+            </a>
+            <a href="#" class="block px-4 py-3 rounded-full font-medium text-gray-900">
+            Installateure
+            </a>
+            <a href="#" class="block px-4 py-3 rounded-full font-medium text-gray-900">
+            Partner
+            </a>
+            <a href="#" class="block px-4 py-3 rounded-full font-medium text-gray-900">
+            Beratung
+            </a>
+            <div class="pt-4 border-t flex flex-col gap-3">
+               <a href="#" class="text-center font-medium text-gray-900">
+               Anmelden
+               </a>
+               <a
+                  href="#"
+                  class="text-center bg-[#142850] text-white px-5 py-3 rounded-full font-semibold"
+                  >
+               Jetzt starten
+               </a>
+            </div>
+         </div>
+      </div>
