@@ -3,9 +3,16 @@
 document.addEventListener("DOMContentLoaded", () => {
      const sectionsConfig = [
         {
-            containerId: "experience-stats-container",
-            filePath: "src/sections/04_experience_stats.html"
+             containerId: "experience-stats-container",
+             filePath: "src/sections/04_experience_stats.html"
+         },
+
+        {
+         containerId: "footer-container",
+         filePath: "src/sections/06_footer.html"
         }
+
+
         // Add more sections here as needed !
 
     ];
