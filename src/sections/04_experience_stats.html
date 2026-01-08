@@ -10,11 +10,11 @@
 
     <div class="relative max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-12">
 
-        <!-- Two-Column Layout: Content & Headline -->
-        <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10 lg:gap-16 xl:gap-24">
+        <!-- Two-Column Layout: Content (Left) & Stats + Images (Right) -->
+        <div class="flex flex-col xl:flex-row xl:items-start gap-12 xl:gap-24">
 
-            <!-- Left Column: Section Label, Description & CTA -->
-            <div class="flex flex-col lg:max-w-md xl:max-w-lg">
+            <!-- Left Column: All Text Content -->
+            <div class="flex-1 flex flex-col">
 
                 <!-- Section Label with Decorative Icon -->
                 <header class="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
@@ -25,13 +25,21 @@
                             aria-hidden="true"
                     />
                     <span class="text-white text-base sm:text-lg lg:text-xl font-medium tracking-wide">
-                    Warum wir
-                 </span>
+                        Warum wir
+                    </span>
                 </header>
 
+                <!-- Main Headline -->
+                <h2
+                        id="experience-heading"
+                        class="uppercase font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] leading-[1.1] bg-gradient-to-br from-white via-white to-white/30 bg-clip-text text-transparent mb-4 sm:mb-6"
+                >
+                    WIR REALISIEREN SOLARANLAGEN <span class="font-normal italic">FÜR KUNDEN SEIT EINEM JAHRZEHNT.</span>
+                </h2>
+
                 <!-- Description Paragraph -->
-                <p class="text-white/70 leading-relaxed text-sm sm:text-base lg:text-lg mb-6 sm:mb-8">
-                    Wir legen großen Wert auf die Zufriedenheit unserer Kunden. Deshalb garantieren wir die Qualität und Zuverlässigkeit unserer Anlagen.
+                <p class="text-white/70 leading-relaxed text-sm sm:text-base lg:text-lg mb-6 sm:mb-8 max-w-xl">
+                    Kundenzufriedenheit steht bei uns an erster Stelle. Deshalb garantieren wir, dass jede Anlage höchste Qualität liefert. Unser ehrliches Engagement für unsere Kunden macht uns einzigartig.
                 </p>
 
                 <!-- Call-to-Action Button -->
@@ -45,84 +53,83 @@
                 </div>
             </div>
 
-            <div class="flex flex-col flex-1 lg:max-w-2xl">
-
-                <h2
-                        id="experience-heading"
-                        class="uppercase font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] leading-[1.1] bg-gradient-to-br from-white via-white to-white/30 bg-clip-text text-transparent mb-4 sm:mb-6"
-                >
-                    WIR REALISIEREN SOLARANLAGEN <span class="font-normal italic">FÜR KUNDEN SEIT EINEM JAHRZEHNT.</span>
-                </h2>
-
-                <!-- Supporting Text -->
-                <p class="text-white/70 leading-relaxed text-sm sm:text-base lg:text-lg mb-8 sm:mb-10 lg:mb-12 max-w-xl">
-                    Kundenzufriedenheit steht bei uns an erster Stelle. Deshalb garantieren wir, dass jede Anlage höchste Qualität liefert. Unser ehrliches Engagement für unsere Kunden macht uns einzigartig.
-                </p>
+            <!-- Right Column: Statistics + Stacked Images -->
+            <div class="flex-1 flex flex-col gap-8 xl:gap-10">
 
                 <!-- Statistics Grid -->
-                <div class="grid grid-cols-3 gap-3 sm:gap-6 lg:gap-8">
+                <div class="grid grid-cols-3 gap-6 sm:gap-8 w-full max-w-[520px] mx-auto xl:mx-0 xl:ml-auto">
 
                     <!-- Stat 1: Awards -->
                     <article class="flex flex-col">
                         <div class="flex items-baseline gap-0.5 sm:gap-1">
-                       <span class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] font-bold text-white leading-none">
-                          10
-                       </span>
+                            <span class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] font-bold text-white leading-none">
+                                10
+                            </span>
                             <span class="text-[#FFC62A] text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-none">
-                          +
-                       </span>
+                                +
+                            </span>
                         </div>
                         <span class="text-white/60 text-xs sm:text-sm lg:text-base mt-1 sm:mt-2">
-                       Auszeichnungen
-                    </span>
+                            Auszeichnungen
+                        </span>
                     </article>
 
                     <!-- Stat 2: Years of Experience -->
                     <article class="flex flex-col">
                         <div class="flex items-baseline gap-0.5 sm:gap-1">
-                       <span class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] font-bold text-white leading-none">
-                          10
-                       </span>
+                            <span class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] font-bold text-white leading-none">
+                                10
+                            </span>
                             <span class="text-[#FFC62A] text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-none">
-                          +
-                       </span>
+                                +
+                            </span>
                         </div>
                         <span class="text-white/60 text-xs sm:text-sm lg:text-base mt-1 sm:mt-2">
-                       Jahre Erfahrung
-                    </span>
+                            Jahre Erfahrung
+                        </span>
                     </article>
 
                     <!-- Stat 3: Installed Systems -->
                     <article class="flex flex-col">
                         <div class="flex items-baseline gap-0.5 sm:gap-1">
-                       <span class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] font-bold text-white leading-none">
-                          598
-                       </span>
+                            <span class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] font-bold text-white leading-none">
+                                598
+                            </span>
                             <span class="text-[#FFC62A] text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-none">
-                          +
-                       </span>
+                                +
+                            </span>
                         </div>
                         <span class="text-white/60 text-xs sm:text-sm lg:text-base mt-1 sm:mt-2">
-                       Installierte Anlagen
-                    </span>
+                            Installierte Anlagen
+                        </span>
                     </article>
 
                 </div>
+
+                <!-- Stacked Images -->
+                <div class="flex flex-col gap-6 w-full max-w-[520px] mx-auto xl:mx-0 xl:ml-auto">
+                    <!-- Image 1: Installers -->
+                    <div class="rounded-[999px] overflow-hidden">
+                        <img
+                                src="src/img/installers.png"
+                                alt="Professionelle Solartechniker bei der Installation von Photovoltaikanlagen"
+                                class="w-full h-auto object-cover"
+                                loading="lazy"
+                        />
+                    </div>
+                    <!-- Image 2: Logistics -->
+                    <div class="rounded-[999px] overflow-hidden">
+                        <img
+                                src="src/img/unnamed.jpg"
+                                alt="Logistik und Transport von Solarmodulen"
+                                class="w-full h-auto object-cover"
+                                loading="lazy"
+                        />
+                    </div>
+                </div>
+
             </div>
         </div>
-
-         <figure class="mt-12 sm:mt-16 lg:mt-20 xl:mt-24">
-            <div class="w-full max-w-[1400px] mx-auto">
-                <div class="rounded-full overflow-hidden aspect-[2.2/1] sm:aspect-[2.5/1]">
-                    <img
-                            src="src/img/large-couch_1.png"
-                            alt="Professionelle Installation einer Solaranlage - Techniker montiert Solarpanele auf einem Dach"
-                            class="w-full h-full object-cover"
-                            loading="lazy"
-                    />
-                </div>
-            </div>
-        </figure>
 
     </div>
 </section>
