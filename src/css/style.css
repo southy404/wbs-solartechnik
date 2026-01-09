@@ -1,3 +1,9 @@
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 .section-wind {
   background: radial-gradient(circle at 100% 100%, #2e5bb6 0%, #142850 20%);
 }

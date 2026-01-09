@@ -1,0 +1,16 @@
+Öffne jetzt ein Terminal oder eine Kommandozeile auf deinem Computer im
+Hauptverzeichnis deines Projekts und gib die folgenden Befehle nacheinander ein:
+Initialisiere Git (falls noch nicht geschehen): git init -b mainDieser Befehl
+erstellt ein neues, leeres Git-Repository in deinem Projektordner und nennt den
+Haupt-Branch main. Füge alle deine Dateien hinzu: git add . Der Punkt . bedeutet
+"alle Dateien im aktuellen Verzeichnis und den Unterverzeichnissen". Erstelle
+dein erstes "Backup" (Commit): git commit -m "Initial commit" Dies speichert
+einen Schnappschuss aller deiner Dateien mit der Nachricht "Initial commit".
+Verbinde dein lokales Projekt mit GitHub: git remote add origin
+DEINE_GITHUB_REPO_URL Ersetze DEINE_GITHUB_REPO_URL durch die URL, die du aus
+Schritt 1 kopiert hast. Lade deinen Code hoch (Push): git push -u origin main
+Dieser Befehl lädt deine Commits (dein "Backup") auf GitHub hoch. Wenn du jetzt
+die Seite deines GitHub-Repositorys neu lädst, wirst du sehen, dass dein
+gesamtes Projekt online ist! Für zukünftige Änderungen wiederholst du einfach
+die Schritte 2, 3 und 5 (wobei du git push origin main verwendest, da die
+Verbindung bereits besteht).
