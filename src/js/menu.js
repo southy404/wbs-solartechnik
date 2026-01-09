@@ -5,30 +5,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!btn || !menu || !lines) return;
 
+  const openMenu = () => {
+    menu.classList.remove("hidden");
+    lines[0].style.transform = "translateY(0) rotate(45deg)";
+    lines[1].style.opacity = "0";
+    lines[2].style.transform = "translateY(0) rotate(-45deg)";
+  };
+
+  const closeMenu = () => {
+    menu.classList.add("hidden");
+    lines[0].style.transform = "translateY(-6px)";
+    lines[1].style.opacity = "1";
+    lines[2].style.transform = "translateY(6px)";
+  };
+
   btn.addEventListener("click", () => {
     const isOpen = !menu.classList.contains("hidden");
-
-    menu.classList.toggle("hidden");
-
-    // ☰ ↔ X Animation
-    lines[0].style.transform = isOpen
-      ? "translateY(-6px) rotate(0deg)"
-      : "translateY(0) rotate(45deg)";
-
-    lines[1].style.opacity = isOpen ? "1" : "0";
-
-    lines[2].style.transform = isOpen
-      ? "translateY(6px) rotate(0deg)"
-      : "translateY(0) rotate(-45deg)";
+    isOpen ? closeMenu() : openMenu();
   });
 
   menu.addEventListener("click", (e) => {
-    if (e.target === menu) {
-      menu.classList.add("hidden");
-
-      lines[0].style.transform = "translateY(-6px) rotate(0deg)";
-      lines[1].style.opacity = "1";
-      lines[2].style.transform = "translateY(6px) rotate(0deg)";
-    }
+    if (e.target === menu) closeMenu();
   });
 });

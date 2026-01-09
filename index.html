@@ -7,12 +7,18 @@
       <script src="https://cdn.tailwindcss.com"></script>
       <link rel="stylesheet" href="src/css/style.css">
    </head>
-   <body class="bg-white overflow-x-hidden">
+   <body class="bg-white overflow-hidden">
       <!-- NAVIGATION -->
-      <nav class="fixed top-6 left-0 w-full z-50">
-         <div
-            class="max-w-[1600px] mx-auto px-12 flex items-center justify-between"
-            >
+      <nav
+  class="
+    absolute 
+    top-4 md:top-6
+    left-1/2 -translate-x-1/2
+    w-full max-w-[1600px]
+    z-50
+  "
+>
+         <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex items-center justify-between">
             <div class="flex items-center gap-3">
                <img
                   src="src/img/logo.png"
@@ -109,10 +115,10 @@
             </div>
          </div>
       </div>
-      <header class="relative w-full bg-[#142850]">
+      <header class="relative w-full bg-[#142850] overflow-hidden">
          <div class="relative max-w-[1600px] mx-auto px-12 pt-40 pb-56">
             <h1
-               class="relative z-30 uppercase font-extrabold text-[72px] leading-[1.02] xl:text-[96px] max-w-[1200px] bg-gradient-to-br from-white via-white to-white/30 bg-clip-text text-transparent"
+               class="relative z-30 uppercase font-extrabold text-[42px] leading-[1.02] xl:text-[96px] max-w-[1200px] bg-gradient-to-br from-white via-white to-white/30 bg-clip-text text-transparent"
                >
                Erleben Sie die Zukunft der sauberen Energie
             </h1>
@@ -122,7 +128,8 @@
                begleiten Ihr Projekt von Anfang bis Ende.
             </p>
             <div
-               class="absolute right-0 bottom-0 -translate-y-16 z-10 w-full max-w-[720px]"
+               class="absolute right-0 bottom-0 -translate-y-16 z-10 w-full     translate-x-[-80px]
+    md:translate-x-[-40px] max-w-[720px]"
                >
                <div
                   class="relative rotate-[5.55deg] rounded-full aspect-[16/9] w-full rounded-[64px] shadow-[0_40px_120px_rgba(0,0,0,0.35)]"
@@ -135,15 +142,23 @@
                   <img
                      src="src/img/yellow-arrow.png"
                      alt="Arrow Icon"
-                     class="absolute -top-14 -right-14 rotate-[-5.55deg] w-100 h-100 z-40 cursor-pointer hover:scale-105 transition"
+                     class="absolute -top-14 right-0 translate-x-14 rotate-[-5.55deg] w-100 h-100 z-40 cursor-pointer hover:scale-105 transition"
                      />
                </div>
             </div>
          </div>
       </header>
-      <div
-         class="pointer-events-none absolute top-[-120px] right-[-0px] w-[900px] h-[900px] bg-[url('src/img/line-pattern.svg')] bg-no-repeat bg-contain opacity-100 rotate-[-5.55deg] z-0"
-         ></div>
+<div
+  class="pointer-events-none absolute top-0 right-0
+         translate-x-[-120px]
+         w-[900px] h-[900px]
+         bg-[url('src/img/line-pattern.svg')]
+         bg-no-repeat bg-contain
+         opacity-80
+         rotate-[-5.55deg]
+         z-0"
+></div>
+
       <main>
          <section class="relative w-full bg-[#142850] pt-16 pb-20 xl:pt-32 xl:pb-40 overflow-hidden">
             <div
